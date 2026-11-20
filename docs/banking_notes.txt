@@ -1,0 +1,51 @@
+BANKING NOTES - KEY CONCEPTS
+
+Cash Reserve Ratio (CRR)
+CRR stands for Cash Reserve Ratio. It is the percentage of a bank's total deposits
+that it is required to maintain as liquid cash with the Reserve Bank of India (RBI).
+Banks cannot use this money for lending or investment. The current CRR is 4% of NDTL.
+
+Statutory Liquidity Ratio (SLR)
+SLR stands for Statutory Liquidity Ratio. It is the minimum percentage of deposits
+that a bank must maintain in liquid assets (gold, cash, government securities).
+The current SLR in India is 18% of NDTL.
+
+Repo Rate
+The Repo Rate is the rate at which the RBI lends money to commercial banks.
+A lower repo rate encourages banks to borrow and lend more, stimulating growth.
+
+Reverse Repo Rate
+The Reverse Repo Rate is the rate at which the RBI borrows money from commercial banks.
+It is always lower than the repo rate and helps absorb excess liquidity.
+
+RTGS (Real-Time Gross Settlement)
+RTGS is a funds transfer system where money moves from one bank to another in real-time.
+Minimum amount: Rs 2 lakh. Available 24x7x365.
+
+NEFT (National Electronic Funds Transfer)
+NEFT is a nation-wide payment system for one-to-one fund transfers, settled in
+half-hourly batches. No minimum or maximum amount limit. Available 24x7.
+
+IMPS (Immediate Payment Service)
+IMPS offers instant interbank electronic fund transfer via mobile/internet banking.
+Available 24x7 including holidays. Limit: up to Rs 5 lakh per transaction.
+
+Non-Performing Asset (NPA)
+An NPA is a loan for which principal or interest payment is overdue for 90+ days.
+NPAs are classified as Substandard, Doubtful, or Loss assets.
+
+Basel Norms
+Basel Norms are banking regulations to ensure banks hold enough capital.
+Basel III requires a minimum Capital Adequacy Ratio (CAR) of 9% for Indian banks.
+
+Priority Sector Lending (PSL)
+PSL requires banks to lend 40% of their ANBC to priority sectors like Agriculture,
+MSMEs, Education, Housing, and Social Infrastructure.
+
+KYC (Know Your Customer)
+KYC is the process banks use to verify client identity and assess risk.
+It prevents money laundering, terrorist financing, and financial crimes.
+
+SWIFT
+SWIFT is a global messaging network banks use to send payment instructions securely.
+It does not transfer funds itself but facilitates payment orders between banks.

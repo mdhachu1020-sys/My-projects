@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Voice Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app">
+
+    <!-- ── Sidebar ── -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">
+          <div class="logo-icon">🤖</div>
+          <div>
+            <div class="logo-title">RAG Assistant</div>
+            <div class="logo-sub">AI-Powered Q&A</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="section-label">CAPABILITIES</div>
+        <div class="cap-item"><span class="cap-icon">📄</span> Document Search (RAG)</div>
+        <div class="cap-item"><span class="cap-icon">🌐</span> General Knowledge</div>
+        <div class="cap-item"><span class="cap-icon">🔊</span> Voice Output (TTS)</div>
+        <div class="cap-item"><span class="cap-icon">🎤</span> Voice Input (STT)</div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="section-label">UPLOADED DOCUMENTS</div>
+        <div id="docList" class="doc-list">
+          <div class="doc-loading">Loading...</div>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="section-label">UPLOAD NEW DOCUMENT</div>
+        <label class="upload-area" id="uploadArea">
+          <input type="file" id="fileInput" accept=".pdf,.docx,.txt" hidden />
+          <div class="upload-icon">📁</div>
+          <div class="upload-text">Drop file or click to browse</div>
+          <div class="upload-sub">PDF · DOCX · TXT</div>
+        </label>
+        <div id="uploadStatus" class="upload-status"></div>
+      </div>
+
+      <div class="sidebar-footer">
+        <div class="status-dot" id="statusDot"></div>
+        <span id="statusText">Connected</span>
+      </div>
+    </aside>
+
+    <!-- ── Main Chat ── -->
+    <main class="chat-area">
+      <div class="chat-header">
+        <div class="chat-header-left">
+          <div class="avatar-pulse">🤖</div>
+          <div>
+            <div class="chat-title">AI Voice Assistant</div>
+            <div class="chat-subtitle">Powered by Gemini · RAG enabled</div>
+          </div>
+        </div>
+        <div class="chat-header-right">
+          <button class="btn-icon" id="autoSpeakBtn" title="Toggle auto-speak" style="font-size:1.1rem;">🔊</button>
+          <button class="btn-icon" id="clearBtn" title="Clear chat">🗑️</button>
+        </div>
+      </div>
+
+      <div class="messages" id="messages">
+        <!-- Welcome message -->
+        <div class="msg bot-msg welcome-msg">
+          <div class="msg-avatar">🤖</div>
+          <div class="msg-body">
+            <div class="msg-bubble">
+              <p>👋 Hello! I'm your AI Voice Assistant.</p>
+              <p>I can answer questions from your <strong>uploaded documents</strong> or use <strong>general knowledge</strong> when needed.</p>
+              <div class="suggestions">
+                <div class="sug-label">Try asking:</div>
+                <button class="sug-btn" onclick="sendSuggestion('What is CRR?')">What is CRR?</button>
+                <button class="sug-btn" onclick="sendSuggestion('Explain Repo Rate')">Explain Repo Rate</button>
+                <button class="sug-btn" onclick="sendSuggestion('What is NPA?')">What is NPA?</button>
+                <button class="sug-btn" onclick="sendSuggestion('What is machine learning?')">What is machine learning?</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Input bar -->
+      <div class="input-bar">
+        <div class="input-wrap">
+          <textarea
+            id="msgInput"
+            placeholder="Ask anything from your documents or general knowledge..."
+            rows="1"
+            autocomplete="off"
+          ></textarea>
+          <div class="input-actions">
+            <button class="btn-mic" id="micBtn" title="Voice input">🎤</button>
+            <button class="btn-send" id="sendBtn" title="Send">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="22" y1="2" x2="11" y2="13"/>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
